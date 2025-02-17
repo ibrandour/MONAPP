@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'myapp/style2.css' %}"
+    />
+    <title>Informations Utilisateur</title>
+  </head>
+  <body>
+    <h1>Formulaire d'informations</h1>
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Soumettre</button>
+    </form>
+  </body>
+</html>

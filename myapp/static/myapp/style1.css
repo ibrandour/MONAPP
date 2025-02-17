@@ -1,0 +1,93 @@
+body {
+  background-color: #f9f9f9;
+}
+.content {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  color: #080233; /* Couleur du titre */
+  font-family: "Helvetica", sans-serif; /* Police pour les titres */
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.buttons-container {
+  text-align: center; /* Alignement centré du texte */
+}
+
+.buttons-container button {
+  padding: 20px; /* Espacement intérieur */
+  width: 200px;
+  margin: 20px 60px; /* Marge autour des boutons */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  border-radius: 200px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de type pointeur */
+  font-size: 25px;
+}
+
+/* Couleurs des boutons */
+.btn-vrai {
+  background-color: #28a745; /* Vert */
+}
+
+.btn-pas-sur {
+  background-color: #ffc107; /* Jaune */
+}
+
+.btn-faux {
+  background-color: #dc3545; /* Rouge */
+}
+
+.buttons-container button:hover {
+  opacity: 0.8; /* Opacité au survol */
+}
+.textarea-container {
+  width: 100px; /* Largeur maximale */
+  height: 1000px;
+  /*margin: 50px auto; /* Centrer horizontalement avec une marge */
+  padding: 20px; /* Espacement
+  intérieur */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre
+  légère */
+}
+textarea {
+  width: 100%; /* Largeur pleine */
+  min-height: 200px; /*
+  Hauteur minimale */
+  padding: 10px; /* Espacement intérieur */
+  margin-bottom: 50px; /* Marge inférieure */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 3px; /* Coins arrondis */
+  box-sizing: border-box; /* Boîte de
+  modèle de contenu */
+  font-size: 30px;
+}
+/* Style de la flèche */
+.next-arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.next-arrow:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}

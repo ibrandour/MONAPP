@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'myapp/style1.css' %}"
+    />
+    <title>Check News</title>
+  </head>
+  <body>
+    <h1>CHECK NEWS</h1>
+    <textarea rows="5" cols="50" readonly>{{question}}</textarea>
+    <form method="post">
+      {% csrf_token %}
+      <div class="buttons-container">
+        <button type="submit" name="response" value="vrai" class="btn-vrai">
+          Vrai
+        </button>
+        <button
+          type="submit"
+          name="response"
+          value="pas_sur"
+          class="btn-pas-sur"
+        >
+          Pas sûr
+        </button>
+        <button type="submit" name="response" value="faux" class="btn-faux">
+          Faux
+        </button>
+      </div>
+    </form>
+    <div class="vraie-reponse">
+      <p>Vraie Réponse: {{ vraie_reponse }}</p>
+    </div>
+    <div class="next-arrow" onclick="submitResponse('suivant')">→</div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+h1 {
+  color: #fff; /* Couleur du titre */
+  font-family: "Helvetica", "Times New Roman", Times, serif; /* Police pour les titres */
+  font-size: 30px;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #007bff;
+  background-attachment: fixed;
+}
+form {
+  max-width: 400px; /* Largeur maximale */
+  margin: 0 auto; /* Centrer le formulaire horizontalement */
+  padding: 20px; /* Espacement intérieur */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style des champs de formulaire */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%; /* Largeur pleine */
+  padding: 10px; /* Espacement intérieur */
+  margin-bottom: 10px; /* Marge inférieure */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 3px; /* Coins arrondis */
+  box-sizing: border-box; /* Boîte de modèle de contenu */
+}
+
+/* Style du bouton */
+button {
+  width: 100%; /* Largeur pleine */
+  font-size: 20px;
+  padding: 10px; /* Espacement intérieur */
+  background-color: #007bff; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  border-radius: 3px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de type pointeur */
+}
+
+button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
